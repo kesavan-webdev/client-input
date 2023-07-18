@@ -64,9 +64,28 @@ const ClientInput = () => {
 
   //hook
   const handleOnSubmit = async (value) => {
+    const {
+      companyName,
+      companyDisplayName,
+      clientId,
+      clientShortName,
+      email,
+      contactNumber,
+      federalId,
+      website,
+      netTerms,
+      jobTerminationNotice,
+      fax,
+      clientStatus,
+      clientCategory,
+      clientOwnership,
+    } = value;
     try {
       const docRef = await addDoc(collection(db, "Bussiness-Information"), {
         ...value,
+        clientId: Number(clientId),
+        contactNumber: Number(contactNumber),
+        federalId: Number(contactNumber),
       });
     } catch (e) {
       console.error("Error adding document: ", e);
