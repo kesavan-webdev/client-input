@@ -85,7 +85,7 @@ const ClientInput = () => {
         ...value,
         clientId: Number(clientId),
         contactNumber: Number(contactNumber),
-        federalId: Number(contactNumber),
+        federalId: Number(federalId),
       });
     } catch (e) {
       console.error("Error adding document: ", e);
