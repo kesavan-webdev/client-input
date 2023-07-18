@@ -1,4 +1,6 @@
 import * as yup from "yup";
+const phoneRegExp =
+  /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
 export const schemaForBussinessInfo = yup.object().shape({
   companyName: yup.string().required("This is required field"),
@@ -11,7 +13,10 @@ export const schemaForBussinessInfo = yup.object().shape({
   clientShortName: yup.string().required("This is required field"),
   email: yup.string().email().required("This is required field"),
   contactNumber: yup
-    .number()
+    .string()
+    .matches(phoneRegExp, "Phone number is not valid")
+    .min(10, "too short")
+    .max(10, "too long")
     .label("Contact Number")
     .typeError(({ label, type }) => `${label} must be a ${type}`)
     .required("This is required field"),
