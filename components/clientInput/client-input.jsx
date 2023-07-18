@@ -67,9 +67,6 @@ const ClientInput = () => {
     try {
       const docRef = await addDoc(collection(db, "Bussiness-Information"), {
         ...value,
-        clientId: Number(clientId),
-        contactNumber: Number(contactNumber),
-        federalId: Number(federalId),
       });
     } catch (e) {
       console.error("Error adding document: ", e);
