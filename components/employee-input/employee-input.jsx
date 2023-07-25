@@ -376,7 +376,7 @@ const EmployeeInput = () => {
                   formik.touched.firstname &&
                   formik.errors.firstname &&
                   "bg-red-400 text-white"
-                } w-[9rem] flex  justify-center`}
+                } w-[9rem] flex text-white  justify-center`}
               >
                 First Name
               </span>
@@ -411,7 +411,7 @@ const EmployeeInput = () => {
                   formik.touched.middlename &&
                   formik.errors.middlename &&
                   "bg-red-400 text-white"
-                } w-[9rem]`}
+                } w-[9rem] text-white`}
               >
                 Middle Name
               </span>
@@ -447,7 +447,7 @@ const EmployeeInput = () => {
                     formik.touched.lastname &&
                     formik.errors.lastname &&
                     "bg-red-400 text-white"
-                  } w-[8rem] flex  justify-center `}
+                  } w-[8rem] flex text-white justify-center `}
                 >
                   Last Name
                 </span>
@@ -523,7 +523,7 @@ const EmployeeInput = () => {
                   formik.touched.username &&
                   formik.errors.username &&
                   "bg-red-400 text-white"
-                } w-[9rem] flex  justify-center`}
+                } w-[9rem] flex text-white  justify-center`}
               >
                 User Name
               </span>
@@ -558,7 +558,7 @@ const EmployeeInput = () => {
                   formik.touched.shortname &&
                   formik.errors.shortname &&
                   "bg-red-400 text-white"
-                } w-[8rem] `}
+                } w-[8rem] text-white`}
               >
                 {" "}
                 Short Name
@@ -594,7 +594,7 @@ const EmployeeInput = () => {
                   formik.touched.email &&
                   formik.errors.email &&
                   "bg-red-400 text-white"
-                } w-[9rem] flex  justify-center`}
+                } w-[9rem] flex text-white justify-center`}
               >
                 Email Address
               </span>
@@ -630,7 +630,7 @@ const EmployeeInput = () => {
                   formik.touched.alternateemail &&
                   formik.errors.alternateemail &&
                   "bg-red-400 text-white"
-                } w-[9rem]`}
+                } w-[9rem] text-white`}
               >
                 AlternateEmail
               </span>
@@ -667,7 +667,7 @@ const EmployeeInput = () => {
                   formik.touched.dateofbirth &&
                   formik.errors.dateofbirth &&
                   "bg-red-400 text-white"
-                } w-[8rem]`}
+                } w-[8rem] text-white`}
               >
                 DateOfBirth
               </span>
@@ -703,7 +703,7 @@ const EmployeeInput = () => {
                   formik.touched.securitynumber &&
                   formik.errors.securitynumber &&
                   "bg-red-400 text-white"
-                } w-[9rem]`}
+                } w-[9rem] text-white`}
               >
                 SecurityNumber
               </span>
@@ -742,7 +742,7 @@ const EmployeeInput = () => {
                   formik.touched.contactnumber &&
                   formik.errors.contactnumber &&
                   "bg-red-400 text-white"
-                } `}
+                } text-white`}
               >
                 Contact Number
               </span>
@@ -862,7 +862,7 @@ const EmployeeInput = () => {
                   "bg-red-400 text-white"
                 } btn btn-sm join-item`}
               >
-                <span className="w-[rem]">Employment Type</span>
+                <span className="w-[rem] ">Employment Type</span>
               </label>
               <Select
                 id="employmentType"
@@ -901,7 +901,7 @@ const EmployeeInput = () => {
                   formik.touched.employmentid &&
                   formik.errors.employmentid &&
                   "bg-red-400 text-white"
-                } `}
+                } text-white`}
               >
                 Employment ID
               </span>
@@ -976,7 +976,7 @@ const EmployeeInput = () => {
                   formik.touched.dateofjoining &&
                   formik.errors.dateofjoining &&
                   "bg-red-400 text-white"
-                } w-[10rem]`}
+                } w-[10rem] text-white`}
               >
                 Date Of Joining
               </span>
@@ -1192,7 +1192,7 @@ const EmployeeInput = () => {
                   formik.touched.payrollid &&
                   formik.errors.payrollid &&
                   "bg-red-400 text-white"
-                } flex  justify-center w-[8rem]`}
+                } flex  justify-center text-white w-[8rem]`}
               >
                 Payroll ID
               </span>
@@ -1231,7 +1231,7 @@ const EmployeeInput = () => {
                   "bg-red-400 text-white"
                 } btn btn-sm join-item`}
               >
-                <span>Holiday Calender</span>
+                <span className="text-white">Holiday Calender</span>
               </label>
               <Select
                 id="holidaycalender"
@@ -1270,7 +1270,7 @@ const EmployeeInput = () => {
                   formik.touched.workerid &&
                   formik.errors.workerid &&
                   "bg-red-400 text-white"
-                } flex  justify-center w-[8rem]`}
+                } flex  text-white justify-center w-[8rem]`}
               >
                 Worker ID
               </span>
