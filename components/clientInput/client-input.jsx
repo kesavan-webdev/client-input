@@ -26,20 +26,20 @@ const ClientInput = () => {
   };
   //select element options
   const jobTerminationNoticeOptions = [
-    { value: "15 Days or less", label: "jobTerminationNoticeOptions" },
-    { value: "1 months", label: "jobTerminationNoticeOptions" },
-    { value: "2 months", label: "jobTerminationNoticeOptions" },
-    { value: "3 months or more", label: "jobTerminationNoticeOptions" },
+    { value: "15 Days or less", label: "15 Days or less" },
+    { value: "1 months", label: "1 months" },
+    { value: "2 months", label: "2 months" },
+    { value: "3 months or more", label: "3 months or more" },
   ];
   const clientStatusOptions = [
-    { value: "active", label: "clientStatusOptions" },
-    { value: "Inactive", label: "clientStatusOptions" },
+    { value: "active", label: "active" },
+    { value: "Inactive", label: "Inactive" },
   ];
 
   const clientCategoryOptions = [
-    { value: "Front-End Developer", label: "clientCategoryOptions" },
-    { value: "Back-End Developer", label: "clientCategoryOptions" },
-    { value: "Full-Stack Developer", label: "clientCategoryOptions" },
+    { value: "Front-End Developer", label: "Front-End Developer" },
+    { value: "Back-End Developer", label: "Back-End Developer" },
+    { value: "Full-Stack Developer", label: "Full-Stack Developer" },
   ];
 
   // select element custom styles
