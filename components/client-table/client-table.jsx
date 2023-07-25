@@ -9,7 +9,7 @@ const ClientTable = ({ textColor, tableData_text_center }) => {
   const [active, setActive] = useState("");
 
   // console.log(search);
-  const { data, randomKey } = useContext(TableContext);
+  const { clientData, randomKey } = useContext(TableContext);
   // console.log(sorting(""));
   return (
     <>
@@ -88,8 +88,8 @@ const ClientTable = ({ textColor, tableData_text_center }) => {
             </thead>
             <tbody className="drop-shadow-md ">
               {/* data showing */}
-              {data &&
-                data
+              {clientData &&
+                clientData
                   .sort((a, b) => {
                     return sorted === ""
                       ? a
