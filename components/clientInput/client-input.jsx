@@ -26,20 +26,20 @@ const ClientInput = () => {
   };
   //select element options
   const jobTerminationNoticeOptions = [
-    { value: "aaa", label: "aaa" },
-    { value: "bbb", label: "bbb" },
-    { value: "ccc", label: "ccc" },
+    { value: "15 Days or less", label: "jobTerminationNoticeOptions" },
+    { value: "1 months", label: "jobTerminationNoticeOptions" },
+    { value: "2 months", label: "jobTerminationNoticeOptions" },
+    { value: "3 months or more", label: "jobTerminationNoticeOptions" },
   ];
   const clientStatusOptions = [
-    { value: "aaa", label: "aaa" },
-    { value: "bbb", label: "bbb" },
-    { value: "ccc", label: "ccc" },
+    { value: "active", label: "clientStatusOptions" },
+    { value: "Inactive", label: "clientStatusOptions" },
   ];
 
   const clientCategoryOptions = [
-    { value: "aaa", label: "aaa" },
-    { value: "bbb", label: "bbb" },
-    { value: "ccc", label: "ccc" },
+    { value: "Front-End Developer", label: "clientCategoryOptions" },
+    { value: "Back-End Developer", label: "clientCategoryOptions" },
+    { value: "Full-Stack Developer", label: "clientCategoryOptions" },
   ];
 
   // select element custom styles
