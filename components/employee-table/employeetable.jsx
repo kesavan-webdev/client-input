@@ -194,7 +194,7 @@ const BusinessTable = () => {
               <th onClick={sortByName}>
                 <span>Employement Type</span>
               </th>
-              <th>Additional Info</th>
+              <th>employee status</th>
               <th onClick={sortByName}>
                 <span>Active placements</span>
               </th>
@@ -227,7 +227,11 @@ const BusinessTable = () => {
                       </span>
                     </td>
                     <td>{i.employmentType.value}</td>
-                    <td>{i["Additional Info"]}</td>
+                    <td>
+                      {i["employeestatus"].map((val, index) => (
+                        <span key={index}>{`${val.value} , `}</span>
+                      ))}
+                    </td>
                     <td>
                       <span
                         className="tooltip tooltip-left tooltip-primary text-2xl text-cyan-400"
